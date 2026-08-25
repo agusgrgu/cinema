@@ -1,0 +1,3 @@
+salas = []
+
+print(salas)
