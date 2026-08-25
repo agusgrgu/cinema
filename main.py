@@ -1,25 +1,5 @@
-def crear_sala():
-    """
-    Crea una sala de cine con un número determinado de filas y columnas.
-    Devuelve:
-        lista: Una lista de listas que representa la sala de cine.
-    """
-    columna = int(input("Ingrese el número de columnas: "))
-    filas = int(input("Ingrese el número de filas: "))
-    sala = []
-    for i in range(columna):
-        fila = []
-        for i in range(filas):
-            fila.append("O")
-        sala.append(fila)
-    return sala
-
-def imprimir_sala(sala):
-    """
-    Imprime la sala de cine.
-    """
-    for fila in sala:
-        print(fila)
+import salas
+import estadisticas
 
 def menu_principal():
     """
