@@ -24,10 +24,6 @@ def imprimir_sala(sala):
 def menu_principal():
     """
     Muestra el menú principal y devuelve la opción seleccionada.
-    Devuelve:
-        int: La opción seleccionada por el usuario.
-
-    -----ingresar "admin" para acceder a las funciones de administrador-----
     """
     print("""
     Bienvenido al sistema de gestión de cine.
@@ -40,7 +36,9 @@ def menu_principal():
 
 def imprimir_funciones_admin():
     """
-    Imprime las funciones disponibles.
+    Imprime las funciones disponibles para el administrador.
+
+    Se accede escribiendo "admin" como nombre de usuario.
     """
     print("""
     Funciones disponibles:
@@ -55,7 +53,9 @@ def imprimir_funciones_admin():
 
 def imprimir_funciones_usuario():
     """
-    Imprime las funciones disponibles.
+    Imprime las funciones disponibles para el usuario. Permitiendo al usuario ver la cartelera y comprar entradas.
+    
+    Al escribir "admin" abre el menu para administradores.
     """
     print("""
     Funciones disponibles:
@@ -65,6 +65,12 @@ def imprimir_funciones_usuario():
     """)
     eleccion = input("Ingrese su opción: ")
     return eleccion
+
+
+"""
+------------------------------------------------------------------------------------------------------------
+"""
+
 
 def main():
     opcion = menu_principal()
